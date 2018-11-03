@@ -7,5 +7,10 @@
     /* justify-items: start; */
     /* justify-items: end; */
     /* justify-items: center; */
-    justify-items: stretch;
+    /* justify-items: stretch; */
+
+    /* align-items: start; */
+    /* align-items: end; */
+    /* align-items: center; */
+    align-items: stretch;
 }

@@ -3,5 +3,5 @@
     display: grid;
     grid-gap:  10px;
     grid-template: 100px 100px 100px
-        / repeat(auto-fill, minmax(100px, 1fr));
+        / repeat(auto-fit, minmax(100px, 1fr));
 }

@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ultimate CSS Grid Course, Exercise 01</title>
+    <style>
+    body {
+      padding: 50px;
+    }
+    main {
+      padding: 10px;
+    }
+    .container {
+      display: grid;
+      grid-template: repeat(2, 50px)
+        / repeat(3, 1fr);
+      grid-gap: 5px;
+    }
+
+    .container div {
+      background:  #ddd;
+      text-align: center;
+      padding: 10px;
+    }
+
+    .container div:nth-child(1) {
+      justify-self: center;
+      align-self: center;
+    }
+
+    .container div:nth-child(2) {
+      justify-self: end;
+      align-self: stretch;
+    }
+
+    .container div:nth-child(3) {
+      justify-self: stretch;
+      align-self: center;
+    }
+
+    .container div:nth-child(4) {
+      justify-self: end;
+      align-self: start;
+    }
+
+    .container div:nth-child(5) {
+      justify-self: center;
+      align-self: end;
+    }
+
+    .container div:nth-child(6) {
+      justify-self: center;
+      align-self: stretch;
+    }
+    </style>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div>Grid Item 1</div>
+        <div>Grid Item 2</div>
+        <div>Grid Item 3</div>
+        <div>Grid Item 4</div>
+        <div>Grid Item 5</div>
+        <div>Grid Item 6</div>
+      </div>
+    </main>
+  </body>
+</html>

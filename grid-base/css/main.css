@@ -1,34 +1,30 @@
 /* Put your code here */
 .grid {
     display: grid;
-    grid-template: 100px 200px
-        / 200px auto 150px;
-    grid-template-areas:
-      "E . A"
-      "B C A"
-      "F D A"
+    grid-template: 100px 100px 100px
+        / repeat(12, [small] 20px [large] 40px);
 }
 
 .grid div:nth-child(1) {
-    grid-area: A
+    grid-column: 1 / span 24;
 }
 
 .grid div:nth-child(2) {
-    grid-area: B
+    grid-column: small 2 / large 5;
 }
 
 .grid div:nth-child(3) {
-    grid-area: C
+  grid-column: auto / span 6;
 }
 
 .grid div:nth-child(4) {
-    grid-area: D
+  grid-column: auto / span 6;
 }
 
 .grid div:nth-child(5) {
-    grid-area: E
+  grid-column: auto / span 12;
 }
 
 .grid div:nth-child(6) {
-    grid-area: F
+  grid-column: auto / span 12;
 }

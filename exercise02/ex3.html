@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ultimate CSS Grid Course, Exercise 01</title>
+    <style>
+    body {
+    padding: 50px;
+    }
+    .container {
+      width: 540px;
+      display: grid;
+      grid-template: 100px 100px
+        / repeat(auto-fill, minmax(100px, 1fr));
+      grid-gap: 10px;
+    }
+    .container div {
+      background: #aaa;
+    }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

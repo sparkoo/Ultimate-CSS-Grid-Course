@@ -4,23 +4,12 @@
     /* grid-template-rows: 100px 200px; */
     /* grid-template-columns: 200px auto 150px; */
 
-    grid-template: [row1-start] 100px [row1-end row2-start] 200px  [row2-end]
+    grid-template: 100px 200px
         / 200px auto 150px;
+
+    /* grid-row-gap: 10px; */
+    /* grid-column-gap: 20px; */
+
+    grid-gap: 10px;
 }
 
-.grid div:nth-child(1) {
-    grid-row: auto / span 2;
-}
-
-.grid div:nth-child(2) {
-    grid-row-start: row2-start;
-    grid-row-end: 4;
-
-    grid-column-start: 1;
-    grid-column-end: 2;
-}
-
-.grid div:nth-child(5) {
-    grid-row: row1-start / row1-end;
-    grid-column: 1 / 3;
-}

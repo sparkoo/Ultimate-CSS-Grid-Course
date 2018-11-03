@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ultimate CSS Grid Course, Exercise 01</title>
+    <style>
+      body {
+      padding: 50px;
+      }
+
+      .grid {
+          display: grid;
+          grid-template-rows: 25px 100px 50px;
+          grid-template-columns: 70% auto;
+          grid-gap: 5px;
+      }
+
+      .grid div:nth-child(1) {
+          background: #111;
+          grid-column: span 2;
+      }
+
+      .grid div:nth-child(2) {
+          background: #aaa;
+      }
+
+      .grid div:nth-child(3) {
+          background: #777;
+      }
+
+      .grid div:nth-child(4) {
+          background: #444;
+          grid-column: span 2;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="grid">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Ultimate CSS Grid Course, Exercise 01</title>
+    <style>
+    body {
+      padding: 50px;
+    }
+    main {
+      border: 2px solid #aaa;
+      padding: 10px;
+    }
+    .container {
+      border: 2px solid #555;
+      display: grid;
+      grid-template: repeat(2, 50px)
+        / repeat(3, 200px);
+      grid-gap: 5px;
+      height: 200px;
+
+      /*
+      justify-content: center;
+      align-content: end;
+      */
+
+      /*
+      justify-content: space-between;
+      align-content: center
+      */
+
+      justify-items: end;
+      align-items: center;
+    }
+
+    .container div {
+      background:  #ddd;
+      text-align: center;
+      padding: 10px;
+    }
+    </style>
+  </head>
+  <body>
+    <main>
+      main content
+      <div class="container">
+        <div>Grid Item 1</div>
+        <div>Grid Item 2</div>
+        <div>Grid Item 3</div>
+        <div>Grid Item 4</div>
+        <div>Grid Item 5</div>
+        <div>Grid Item 6</div>
+      </div>
+    </main>
+  </body>
+</html>

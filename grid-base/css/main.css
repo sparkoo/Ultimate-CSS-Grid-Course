@@ -2,6 +2,6 @@
 .grid {
     display: grid;
     grid-gap:  10px;
-    grid-template: minmax(100px, 200px) 100px 100px
-        / repeat(6, minmax(100px, 1fr));
+    grid-template: 100px 100px 100px
+        / repeat(auto-fill, minmax(100px, 1fr));
 }
